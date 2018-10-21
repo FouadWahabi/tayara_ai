@@ -103,8 +103,8 @@ class ContentBot extends Component {
                                     {(() => {
                                       return (
                                           <div>
-                                          <p>Category : {this.state.category}</p>
-                                          <p>Subcategory : {this.state.subcategory}</p>
+                                          <p style={{fontWeight: 600}}>Category : {this.state.category}</p>
+                                          <p style={{fontWeight: 600}}>Subcategory : {this.state.subcategory}</p>
                                           </div>
                                       )
                                     })()}
