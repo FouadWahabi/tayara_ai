@@ -62,8 +62,8 @@
       <file leaf-file-name="ContentBot.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/ContentBot/ContentBot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="308">
+              <caret line="100" column="146" selection-start-line="100" selection-start-column="146" selection-end-line="100" selection-end-column="146" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -728,7 +728,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540098393027</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Remove credentials">
+      <created>1540098519815</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1540098519815</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -776,7 +783,8 @@
     <MESSAGE value="Change state with the new filename" />
     <MESSAGE value="REtreive catego" />
     <MESSAGE value="State modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="State modal" />
+    <MESSAGE value="Remove credentials" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove credentials" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -980,8 +988,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/ContentBot/ContentBot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="308">
+          <caret line="100" column="146" selection-start-line="100" selection-start-column="146" selection-end-line="100" selection-end-column="146" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

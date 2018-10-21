@@ -98,6 +98,7 @@ class ContentBot extends Component {
                     <CardBody>
                         <Row>
                              <Modal isOpen={this.state.modal["showImageCategory"]} toggle={() => this.toggleModal("showImageCategory")} className={this.props.className}>
+                                  <ModalHeader toggle={() => this.toggleModal("showImageCategory")}>Create your article using these informations :</ModalHeader>
                                     <ModalBody>
                                     {(() => {
                                       return (
@@ -119,7 +120,7 @@ class ContentBot extends Component {
                                 }).then((res) => {
                                     this.setState({
                                         category: res.data['category'],
-                                        subcategory: res.data['subcategory']
+                                        subcategory: res.data['sub_category']
                                     })
                                     this.toggleModal("showImageCategory");
                                 })
