@@ -68,7 +68,9 @@ class ContentBot extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {};
+        this.state = {
+            file: ''
+        };
 
         this.hello = this.hello.bind(this);
     }
@@ -92,7 +94,11 @@ class ContentBot extends Component {
                                 <p className="App-intro">
                                     Upload picture.
                                 </p>
-                                <FilePond name="image" server="http://137.74.165.25:4902/upload"/>
+                                <FilePond name="image" server="http://137.74.165.25:4902/upload" onupdatefiles={(fileItems) => {
+                                this.setState({
+                                    file: fileItems[0].filename
+                                })
+                          }}/>
                             </Col>
                         </Row>
                     </CardBody>
