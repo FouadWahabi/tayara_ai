@@ -70,7 +70,8 @@ class ContentBot extends Component {
 
         this.state = {
             category: '',
-            subcategory: ''
+            subcategory: '',
+            modal: {}
         };
 
         this.hello = this.hello.bind(this);
