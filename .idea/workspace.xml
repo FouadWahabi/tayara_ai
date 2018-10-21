@@ -62,8 +62,8 @@
       <file leaf-file-name="ContentBot.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/ContentBot/ContentBot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+            <state relative-caret-position="325">
+              <caret line="126" column="30" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -707,7 +707,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540085646327</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Change state with the new filename">
+      <created>1540097719803</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1540097719803</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -752,7 +759,8 @@
     <MESSAGE value="Change front port" />
     <MESSAGE value="Add cors" />
     <MESSAGE value="Fix port" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix port" />
+    <MESSAGE value="Change state with the new filename" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change state with the new filename" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -956,8 +964,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/ContentBot/ContentBot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+        <state relative-caret-position="325">
+          <caret line="126" column="30" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

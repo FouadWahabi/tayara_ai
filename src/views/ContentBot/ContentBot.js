@@ -69,12 +69,20 @@ class ContentBot extends Component {
         super(props);
 
         this.state = {
-            file: ''
+            category: '',
+            subcategory: ''
         };
 
         this.hello = this.hello.bind(this);
     }
 
+    toggleModal(id) {
+        let modal =  Object.assign({}, this.state.modal);
+        modal[id] = ! modal[id];
+        this.setState({
+          modal : modal
+        })
+      }
 
     hello() {
         console.log('Hello world')
@@ -90,13 +98,31 @@ class ContentBot extends Component {
                     </CardHeader>
                     <CardBody>
                         <Row>
+                             <Modal isOpen={this.state.modal["showImageCategory"]} toggle={() => this.toggleModal("showImageCategory")} className={this.props.className}>
+                                    <ModalBody>
+                                    {(() => {
+                                      return (
+                                          <div>
+                                          <p>{this.state.category}</p>
+                                          <p>{this.state.subcategory}</p>
+                                          </div>
+                                      )
+                                    })()}
+                                    </ModalBody>
+                                </Modal>
                             <Col xs="12" sm="12" lg="12">
                                 <p className="App-intro">
                                     Upload picture.
                                 </p>
                                 <FilePond name="image" server="http://137.74.165.25:4902/upload" onupdatefiles={(fileItems) => {
-                                this.setState({
-                                    file: fileItems[0].filename
+                                http.post('http://137.74.165.25:4902/predict', {
+                                    image: 'http://137.74.165.25:4902/static/img/' + fileItems[0].filename
+                                }).then((res) => {
+                                    this.setState({
+                                        category: res.data['category'],
+                                        subcategory: res.data['subcategory']
+                                    })
+                                    this.toggleModal("showImageCategory");
                                 })
                           }}/>
                             </Col>
