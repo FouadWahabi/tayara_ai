@@ -103,8 +103,8 @@ class ContentBot extends Component {
                                     {(() => {
                                       return (
                                           <div>
-                                          <p>{this.state.category}</p>
-                                          <p>{this.state.subcategory}</p>
+                                          <p>Category : {this.state.category}</p>
+                                          <p>Subcategory : {this.state.subcategory}</p>
                                           </div>
                                       )
                                     })()}
