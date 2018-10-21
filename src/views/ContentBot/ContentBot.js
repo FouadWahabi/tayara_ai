@@ -58,8 +58,6 @@ registerPlugin(FilePondPluginImagePreview);
 const cookieJar = new tough.CookieJar();
 
 var http = axios.create({
-    jar: cookieJar,
-    withCredentials: true
 })
 
 axiosCookieJarSupport(http);
